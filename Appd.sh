@@ -1,7 +1,7 @@
 #/bin/bash
 Date=`date +%Y-%m-%d`
 HOST=`/bin/hostname`_tc
-APPD_PATH = /usr/appdynagent/ver4.5.13.27526/logs
+APPD_PATH=/usr/appdynagent/ver4.5.13.27526/logs
 for i in `seq 1 10`;
 do
 /bin/mkdir $APPD_PATH/$HOST$i
