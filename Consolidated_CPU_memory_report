@@ -1,0 +1,13 @@
+#!/bin/bash
+for i in `ls -la /var/log/sa/ | grep sa |awk {'print $9'}`;
+do
+echo ---------------$i -----------------;
+sar -f /var/log/sa/$i >> /tmp/cpu_usage.csv
+## Below commnad,will remove the lines when the pattern like localhost,Average,restart and blank lines 
+sed -i '/localhost\|Average\|RESTART\|^$/'d /tmp/cpu_usage.csv
+##  Below one, will add the o/p of for loop and date to every line at the begining of the file cpu_usage.
+sed -i "s/^/$i\ $(date '+-%m-%Y') /" /tmp/cpu_usage.csv
+## Below one removes the first to charachters of every line.
+sed -i 's/^..//' /tmp/cpu_usage.csv
+done
+###------Tested-----To get the consolidated CPU utilization -----###
