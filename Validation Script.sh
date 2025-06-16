@@ -55,45 +55,45 @@ EOF
 [centosrelease-7-extras-$basearch]
 enabled = 1
 name =  Parexel Centos release-$basearch
-baseurl = http://bil-repo-001v.pii-dmz.ext/pub/repos/centos-7-extras-$basearch/
+baseurl = http://bil.ext/pub/repos/centos-7-extras-$basearch/
 gpgcheck = 0
 
 [centosrelease-7-repos-$basearch]
 enabled = 1
 name =  Parexel Centos release-repos-$basearch
-baseurl = http://bil-repo-001v.pii-dmz.ext/pub/repos/centos-7-base-$basearch/
+baseurl = http://bil.pii-dmz.ext/pub/repos/centos-7-base-$basearch/
 gpgcheck = 0
 
 
 [centosrelease-7-updates-$basearch]
 enabled = 1
 name = Parexel Centos Update release-updates-$basearch
-baseurl = http://bil-repo-001v.pii-dmz.ext/pub/repos/centos-7-updates-$basearch/
+baseurl = http://bil.pii-dmz.ext/pub/repos/centos-7-updates-$basearch/
 gpgcheck = 0
 
 
 [puppetlabs-products-el7-$basearch]
 enabled = 1
 name = Parexel Puppet release-$basearch
-baseurl = http://bil-repo-001v.pii-dmz.ext/pub/repos/puppetlabs7-products/
+baseurl = http://bil.pii-dmz.ext/pub/repos/puppetlabs7-products/
 gpgcheck = 0
 
 [puppetlabs-devel-el7-$basearch]
 enabled = 1
 name = Parexel Puppet devel release-$basearch
-baseurl = http://bil-repo-001v.pii-dmz.ext/pub/repos/puppetlabs7-devel/
+baseurl = http://bil.pii-dmz.ext/pub/repos/puppetlabs7-devel/
 gpgcheck = 0
 
 [puppetlabs-deps-el7-$basearch]
 enabled = 1
 name = Parexel Puppet Deps release-$basearch
-baseurl = http://bil-repo-001v.pii-dmz.ext/pub/repos/puppetlabs7-deps/
+baseurl = http://bil.pii-dmz.ext/pub/repos/puppetlabs7-deps/
 gpgcheck = 0
 
 [epel]
 enabled = 1
 name = Parexel epel base release-$basearch
-baseurl = http://bil-repo-001v.pii-dmz.ext/pub/repos/epel7/
+baseurl = http://bil.pii-dmz.ext/pub/repos/epel7/
 gpgcheck = 0
 
 EOF
