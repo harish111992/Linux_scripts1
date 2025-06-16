@@ -1,7 +1,7 @@
 #!/bin/bash
 # -
-# PAXEXEL Tomcat uninstallation scriptlet
-# mario.chamorro@parexel.com
+#Tomcat uninstallation scriptlet
+# 
 # -
 PROGRAM=`basename $0`
 
