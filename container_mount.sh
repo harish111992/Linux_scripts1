@@ -2,8 +2,9 @@
 CONTAINER=$1
 USAGE(){
   echo "You need to pass a containername"
+  #$0 -> Name of the script
   basename=$0
-  echo "usage: $basename [CONTAINERNAME]"
+  echo "usage: $basename [CONTAINERNAME]" 1>2&
   exit 1
 }
 
